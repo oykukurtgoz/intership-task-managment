@@ -87,7 +87,7 @@ const Home = () => {
           Recent Internship Diaries
         </h1>
         {diaries.length === 0 ? (
-          <p className="text-gray-500 italic">Henüz günlük eklenmedi.</p>
+          <p className="text-gray-500 italic">No logs have been added yet.</p>
         ) : (
           <div className="space-y-4">
             {diaries.map((diary) => (
@@ -99,7 +99,7 @@ const Home = () => {
                   {diary.title}
                 </p>
                 <span className="text-sm text-gray-500">
-                  {new Date(diary.createdAt).toLocaleDateString("tr-TR", {
+                  {new Date(diary.createdAt).toLocaleDateString("en-US", {
                     day: "numeric",
                     month: "long",
                     year: "numeric",
