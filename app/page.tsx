@@ -50,13 +50,12 @@ const Home = () => {
   if (loading)
     return (
       <div className="flex justify-center items-center h-screen">
-        <p className="text-lg text-gray-500 animate-pulse">Yükleniyor...</p>
+        <p className="text-lg text-gray-500 animate-pulse">Loading...</p>
       </div>
     );
 
   return (
     <div className="p-6 max-w-5xl mx-auto space-y-12">
-      {/* Görev Kartları */}
       <section>
         <h1 className="text-3xl font-bold text-gray-800 mb-6">
           Tasks
